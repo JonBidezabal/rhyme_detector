@@ -1,6 +1,6 @@
 import speech_recognition as transcriptor
 
-def transcribe_audio(audio_file):
+def get_text(audio_file):
     try:
         recognizer = transcriptor.Recognizer()
         with transcriptor.AudioFile(audio_file) as source:
